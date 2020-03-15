@@ -4,6 +4,8 @@ Doomee
 
 A lightweight file downloading library for Java.
 
+![Doomee](https://dangerous-team.com/blog/assets/file/icon/Doomee.png)
+
 Just takes only one line of code.
 
 ``` java
