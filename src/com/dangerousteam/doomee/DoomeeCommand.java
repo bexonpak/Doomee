@@ -17,7 +17,7 @@ public class DoomeeCommand {
      * Main.
      */
     public static void main(String[] args) {
-        String output = "";
+        String output = "./";
         // If output is empty, output is set to the current directory.
         String file = "";
         boolean hasFile = false;
@@ -80,7 +80,7 @@ public class DoomeeCommand {
 
         // Download from Url.
         if (!url.equals("")) {
-            Doomee.load("./", new String[]{url}).tasks(task).start();
+            Doomee.load(output, new String[]{url}).tasks(task).start();
             System.exit(0);
         }
 
