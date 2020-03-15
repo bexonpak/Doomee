@@ -12,7 +12,7 @@ Just takes only one line of code.
 Doomee.load("output/", url[]).start();
 ```
 
-For more information please see the website.
+For more information please see the [wiki](https://github.com/bexonpak/Doomee/wiki).
 
 Download
 --------
