@@ -1,4 +1,4 @@
-Manifest-Version: 1.0
+Manifest-Version: 1.0.1
 Created-By: Bexon Pak
-Specification-Version: 1.0
+Specification-Version: 1.0.1
 Main-Class: com.dangerousteam.doomee.DoomeeCommand

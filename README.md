@@ -9,7 +9,7 @@ A lightweight file downloading library for Java.
 Just takes only one line of code.
 
 ``` java
-Doomee.load("output/", url[]).start();
+Doomee.load("output/", url[]).tasks(taskNum).start();
 ```
 
 **For more information please see the [wiki](https://github.com/bexonpak/Doomee/wiki).**
