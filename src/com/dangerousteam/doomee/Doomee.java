@@ -4,10 +4,10 @@
 package com.dangerousteam.doomee;
 
 import com.dangerousteam.doomee.bean.DownProp;
-import com.sun.istack.internal.NotNull;
 
 public class Doomee {
     private static DownProp downProp;
+
     /**
      * The default number of tasks is 3.
      */
@@ -17,7 +17,7 @@ public class Doomee {
      * Set the number of tasks. If the {@code task} value is less than the Url array length,
      * the Url array length will be used as the {@code task} value
      */
-    public Doomee tasks(@NotNull int taskNum) {
+    public Doomee tasks(int taskNum) {
         if (downProp.getUrl().length < taskNum) {
             task = downProp.getUrl().length;
         } else {
@@ -29,7 +29,7 @@ public class Doomee {
     /**
      * Download properties.
      */
-    public static Doomee load(@NotNull String output, @NotNull String[] url) {
+    public static Doomee load(String output, String[] url) {
         Doomee doomee = new Doomee();
         downProp = new DownProp.Builder()
                 .output(output)

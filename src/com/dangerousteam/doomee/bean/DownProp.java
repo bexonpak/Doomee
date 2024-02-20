@@ -3,10 +3,12 @@
  */
 package com.dangerousteam.doomee.bean;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.util.Arrays;
 
 public class DownProp implements Serializable {
+    @Serial
     private static final long serialVersionUID = -4755884196718985637L;
 
     private String output;

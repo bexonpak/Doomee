@@ -8,10 +8,10 @@ import com.dangerousteam.doomee.DownloadFile;
 import java.util.concurrent.Callable;
 
 public class DownloadTask implements Callable<Integer> {
-    private Integer taskID;
-    private String url;
-    private String output;
-    private Long createdTime;
+    private final Integer taskID;
+    private final String url;
+    private final String output;
+    private final Long createdTime;
 
     public DownloadTask(String url, String output, Integer taskID, Long createdTime) {
         this.url = url;
@@ -21,9 +21,9 @@ public class DownloadTask implements Callable<Integer> {
     }
 
     public Integer call() {
-        System.out.println("任务[" + taskID + "]开始执行: " + url);
+        System.out.println("Task[" + taskID + "] Start: " + url);
         DownloadFile.downLoadFromUrl(url, output, createdTime);
-        System.out.println("\uD83C\uDF7A 任务[" + taskID + "]下载完成 Url: " + url + "  保存位置: " + output);
+        System.out.println("\uD83C\uDF7A Task[" + taskID + "] Completed Url: " + url + "  Local: " + output);
         return taskID;
     }
 }

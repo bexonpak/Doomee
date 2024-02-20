@@ -98,16 +98,17 @@ public class DoomeeCommand {
      * Help.
      */
     private static void checkHelp() {
-        System.out.println("java -jar Doomee.jar [options...]\n" +
-                "\n" +
-                "--output=f          -o          Specify local output file.\n" +
-                "--task=3            -t          Specify the number of simultaneous downloads.\n" +
-                "--file=*.txt        -f          Get URL from txt file to download.\n" +
-                "--url=URL           -u          Download from url.\n" +
-                "--help              -h          This information.\n" +
-                "--version           -v          Version information.\n" +
-                "\n" +
-                "Home page https://dangerous-team.com");
+        System.out.println("""
+                java -jar Doomee.jar [options...]
+
+                --output=f          -o          Specify local output file.
+                --task=3            -t          Specify the number of simultaneous downloads.
+                --file=*.txt        -f          Get URL from txt file to download.
+                --url=URL           -u          Download from url.
+                --help              -h          This information.
+                --version           -v          Version information.
+
+                Home page https://dangerous-team.com""");
         System.exit(0);
     }
 }
